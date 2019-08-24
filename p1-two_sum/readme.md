@@ -11,6 +11,10 @@
 因为`nums[0]+nums[1]=2+7=9`
 所以返回`[0,1]`
 
+---
+
 只存在一种`a+b=target`
+
 遍历数组，如果`target-element`不在`map`中，就存储`element`，如果存在就返回`[IDX(target-element), IDX(element)]`
+
 这里反过来输出是因为`target-element`出现在`element`前面
