@@ -4,3 +4,4 @@ Cargo.lock
 Cargo.toml
 
 .DS_Store
+.vscode
