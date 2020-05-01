@@ -42,7 +42,7 @@ class LRUCache {
                 table.erase(cache.back().key);
                 cache.pop_back();
             }
-            cache.push_front({key, value});
+            cache.emplace_front(key, value);
             table.emplace(key, cache.begin());
         } else {
             it->second->value = value;

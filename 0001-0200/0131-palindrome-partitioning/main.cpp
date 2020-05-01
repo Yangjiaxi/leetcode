@@ -67,7 +67,7 @@ class Solution {
 
 int main() {
     Solution a;
-    auto res = a.partition("");
+    auto res = a.partition("kksk");
     print2DVector(res);
     return 0;
 }
