@@ -88,17 +88,16 @@ class Solution {
 int main() {
     Solution a;
     pair<string, int> test[] = {
-        {"-1", -1},
-        {"   -1   ", -1},
+        {"1 + -1", 0},
+        {" -1 ", -1},
         {"1   + 1", 2},
         {"2 - 1 + 2", 3},
         {"(1+(4+5+2)-3)+(6+8)", 23},
         {"3+2 * 2", 7},
         {"((1 + (3 * 2 / 1) * 2) + 1) / (2 * 2 * 2 - 1)", 2}};
-    for (auto &tc : test) {
-        cout << "`" << tc.first << "` :" << endl;
-        cout << "Expected: " << tc.second
-             << ", Actual: " << a.calculate(tc.first) << endl;
+    for (auto &[s, t] : test) {
+        cout << "`" << s << "`" << endl;
+        cout << "Expected: " << t << ", Actual: " << a.calculate(s) << endl;
         cout << string(20, '-') << endl;
     }
     return 0;
