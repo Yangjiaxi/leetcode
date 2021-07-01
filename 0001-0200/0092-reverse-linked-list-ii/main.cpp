@@ -38,13 +38,11 @@ class Solution {
     }
 
     T stepK(T begin, int k) {
-        if (k == 0)
-            return begin;
-        if (k < 0)
-            return nullptr;
+        if (k == 0) return begin;
+        if (k < 0) return nullptr;
+
         T curr = begin;
-        for (int i = 0; i < k; ++i)
-            curr = curr->next;
+        for (int i = 0; i < k; ++i) curr = curr->next;
         return curr;
     }
 
